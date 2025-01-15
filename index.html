@@ -1,7 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineering Services</title>
+    <style>
+        :root {
+            --primary: #2d3748;
+            --secondary: #4a5568;
+            --accent: #0ea5e9;
+            --background: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            line-height: 1.5;
+            color: var(--primary);
+            background-color: var(--background);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #e2e8f0;
+        }
+
+        .services {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            background-color: white;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--secondary);
+        }
+
+        .cta {
+            background-color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            transition: background-color 0.2s;
+        }
+
+        .button:hover {
+            background-color: #0284c7;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <section class="hero">
+        <h1>Data Engineering Excellence</h1>
+        <p>Transform your data into actionable insights with expert data engineering and science solutions</p>
+    </section>
+
+    <section class="services">
+        <h2>Services</h2>
+        <div class="grid">
+            <div class="service-card">
+                <h3>Data Pipeline Development</h3>
+                <p>Custom ETL pipelines, data warehousing, and real-time processing solutions tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Machine Learning Solutions</h3>
+                <p>End-to-end ML pipeline development, from model training to production deployment and monitoring.</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Architecture</h3>
+                <p>Scalable and efficient data infrastructure design, ensuring optimal performance and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Transform Your Data?</h2>
+        <p>Let's discuss how I can help you achieve your data goals</p>
+        <a href="#contact" class="button">Get in Touch</a>
+    </section>
 </body>
 </html>
